@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciativas - Saneamiento Lago de Guadalupe</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Roboto:wght@700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #0077b6;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #00b4d8;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            position: relative;
+            transition: color 0.3s, transform 0.3s;
+        }
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: #fff;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-out;
+        }
+        nav a:hover {
+            color: #03045e;
+            transform: scale(1.1);
+        }
+        nav a:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        .section {
+            background-color: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            margin-bottom: 15px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 2rem;
+            color: #023e8a;
+        }
+        .section p {
+            line-height: 1.6;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1rem;
+            color: #555;
+        }
+        .cards {
+            display: flex;
+            gap: 20px;
+        }
+        .card {
+            flex: 1;
+            padding: 20px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+            text-align: center;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        .card:hover {
+            background-color: #f4f4f4;
+            transform: scale(1.05);
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .card h3 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.5rem;
+            color: #0077b6;
+            margin-bottom: 10px;
+        }
+        .card p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Iniciativas de Saneamiento</h1>
+        </header>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="sobre.html">Sobre el Lago</a>
+            <a href="iniciativas.html">Iniciativas</a>
+            <a href="participa.html">Participa</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <section class="section">
+            <h2>Iniciativas de Saneamiento</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="recoleccion_basura.jpg" alt="Recolección de Basura">
+                    <h3>Recolección de Basura</h3>
+                    <p>Se realizará una campaña para recolección de basura alrededor del lago.</p>
+                </div>
+                <div class="card">
+                    <img src="reforestacion.jpg" alt="Reforestación">
+                    <h3>Reforestación</h3>
+                    <p>Se hará una campaña para invitar a todos a plantar árboles cerca del lago para recuperar su flora y fauna.</p>
+                </div>
+                <div class="card">
+                    <img src="juicio_amparo.jpg" alt="Juicio de Amparo">
+                    <h3>Juicio de Amparo</h3>
+                    <p>Después de nuestra aportación se llevará a cabo un juicio de amparo para obligar a las autoridades a actuar de manera productiva.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
